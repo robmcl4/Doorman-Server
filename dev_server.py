@@ -1,5 +1,5 @@
 """
-	Cherrypy development server for TODO
+	Cherrypy development server for Door
 	Launches on port 8000 and listens on 0.0.0.0
 """
 
