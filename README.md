@@ -20,7 +20,7 @@ The module `config.py` expects a configuration file `config.cfg` like this:
     database = door
     ssl = False
 
-If `ssl` is set to `True`, then the database connector expects to find certain files within /door/db/ssl/:
+If `ssl` is set to `True`, then the database connector expects to find certain files within `/door/db/ssl/`:
 
 * `ca-cert.pem`
 * `client-cert.pem`
