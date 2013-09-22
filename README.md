@@ -4,6 +4,7 @@ A server for the Doorman project. The web site generates friendly graphs using d
 
 ## Requirements
 
+* Python 3+
 * `cherrypy` - a python web server framework
 * `chameleon` - templating engine
 * `mysql-connector-python` - Oracle's Python DBAPI connection to a MySQL server
