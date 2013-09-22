@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Door Statistics</title>
+    <link rel="stylesheet" href="./static/css/main.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="./static/js/d3.tip.min.js"></script>
+</head>
+<body>
+    <script src="./static/js/main.js"></script>
+    <h1 id="title">2027 Door Data</h1>
+    <div id="tile-outer-holder">
+        <div class="tile-holder">
+            <div id="open-count" class="tile tile-small">
+                <h2>Total Opens</h2>
+                <div class="stat" tal:content="total_opens"></div>
+            </div>
+            <div id="open-state" class="tile tile-small">
+                <h2>Current Status</h2>
+                <div class="stat" tal:content="'Offline' if not online else open_status"></div>
+            </div>
+            <div id="open-today" class="tile tile-small">
+                <h2>Opens Today</h2>
+                <div class="stat" tal:content="daily_opens"></div>
+            </div>
+            <div id="open-weekly" class="tile tile-small">
+                <h2>Opens this Week</h2>
+                <div class="stat" tal:content="weekly_opens"></div>
+            </div>
+            <div id="mean-daily" class="tile tile-small">
+                <h2>Mean Daily Opens</h2>
+                <div class="stat" tal:content="daily_mean"></div>
+            </div>
+            <div id="stddev-daily" class="tile tile-small">
+                <h2>Daily STDDEV</h2>
+                <div class="stat" tal:content="daily_stddev"></div>
+            </div>
+        </div>
+
+        <div class="tile-holder">
+            <div id="daily-graph" class="tile tile-large">
+                <h2>Opens Today</h2>
+                <div class="graph-holder" id="daily-graph-holder"></div>
+            </div>
+            <div id="daily-total-graph" class="tile tile-large">
+                <h2>Daily Opens Total</h2>
+                <div class="graph-holder" id="daily-total-graph-holder"></div>
+            </div>
+            <div id="weekly-graph" class="tile tile-large">
+                <h2>Opens This Week</h2>
+                <div class="graph-holder" id="weekly-graph-holder"></div>
+            </div>
+            <div id="weekly-total-graph" class="tile tile-large">
+                <h2>Weekly Opens Total</h2>
+                <div class="graph-holder" id="weekly-total-graph-holder"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
