@@ -10,7 +10,7 @@ A server for the Doorman project. The web site generates friendly graphs using d
 
 ## Configuration
 
-The module `config.py` expects a configuration file `config.cfg` like this:
+The module `door.config` expects a configuration file `/door/config.cfg` like this:
 
     [mysql]
     user = door
